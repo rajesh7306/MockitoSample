@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="My Page"
+            android:textSize="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <EditText
+            android:id="@+id/userNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Date Of Birth"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="start"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <DatePicker
+            android:id="@+id/dateOfBirthInput"
+            android:inputType="text|date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Email"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="start"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <EditText
+            android:id="@+id/emailInput"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:hint="enter your email"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"/>
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:text="Save"
+                android:layout_height="wrap_content"
+                android:onClick="onSaveClick"
+                android:layout_gravity="center_horizontal"/>
+            <Button
+                android:id="@+id/revertButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Revert"
+                android:onClick="onRevertClick"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+</ScrollView>
